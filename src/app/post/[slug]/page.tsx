@@ -12,6 +12,7 @@ const PostDetailPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <div className="flex w-full max-w-md flex-col md:max-w-screen-lg">
       <CardPost
+        userId={post.createdById}
         key={post.id}
         content={post.content ?? ""}
         email={post.createdBy.email ?? ""}

@@ -4,9 +4,21 @@ This is a simple project using the T3 stack: TypeScript, Tailwind CSS, and tRPC.
 
 ## Table of Contents
 
+- [Features](#features)
 - [Installation](#installation)
 - [Setup Environment](#setup-environment)
 - [Usage](#usage)
+
+## Features
+1. User Profiles ✅
+2. Feed Post ✅
+3. Create Post ✅
+4. Like ✅
+5. Comment ✅
+6. Infinite Scroll ✅
+7. Upload Image Profile ❌
+8. Followers ❌
+9. Search Post/user ❌
 
 ## Installation
 

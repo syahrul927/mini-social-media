@@ -51,6 +51,7 @@ export default function Posts({ userId }: PostsProps) {
       {posts?.map((post) => (
         <CardPost
           key={post.id}
+          userId={post.createdById}
           content={post.content ?? ""}
           email={post.createdBy.email ?? ""}
           username={post.createdBy.name ?? ""}

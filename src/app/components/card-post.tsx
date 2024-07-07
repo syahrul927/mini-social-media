@@ -5,6 +5,7 @@ import { api } from "~/trpc/react";
 
 interface CardPostProps {
   id: number;
+  userId: string;
   email: string;
   username: string;
   content: string;
@@ -25,7 +26,9 @@ const CardPost = (props: CardPostProps) => {
       <div className="flex items-center gap-3 border-b px-3 py-6">
         <div className="h-8 w-8 rounded-full bg-neutral-300"></div>
         <div>
-          <p className="text-lg">{props.username}</p>
+          <Link href={`/profile/${props.userId}`}>
+            <p className="text-lg">{props.username}</p>
+          </Link>
           <p className="text-sm text-neutral-400">{props.email}</p>
         </div>
       </div>
