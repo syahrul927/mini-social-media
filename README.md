@@ -49,6 +49,5 @@ To start the production server, run:
 
 ```bash
 npm run start
-Project Structure
 ```
 
